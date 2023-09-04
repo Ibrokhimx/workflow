@@ -25,5 +25,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run a one-line script
-        run: echo this is for 
+      - name: 
+        run: echo "Once upon a time in a faraway land"
+            echo "${{ github.event.inputs.story_title }} was written by ${{ github.event.inputs.author_name }}"
+            echo "This whimsical tale takes you on a journey through a magical forest where every flower could talk."
+            echo "Will you explore its secrets?
+		    
