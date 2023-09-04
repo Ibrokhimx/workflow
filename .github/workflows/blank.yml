@@ -2,15 +2,15 @@ name: My First Automation
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     paths:
-      - 'docs/**'
+          - 'storybook/**'
   workflow_dispatch:
-    inputs:
-      customer:
-        description: 'What is the customer ?'
-        required: true
-        type: string
+   
 
+    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,4 +19,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        run: echo this is for ${{ inputs.customer }}
+        run: echo this is for 
