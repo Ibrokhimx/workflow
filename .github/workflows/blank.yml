@@ -9,15 +9,13 @@ on:
           - 'storybook/**'
   workflow_dispatch:
     inputs:
-        story_title:
-          description: "A short title for the story"
-          required: true
-        author_name:
-          description: "The author's name"
-          required: true
-   
-
-    
+      story_title:
+         description: "A short title for the story"
+         required: true
+      author_name:
+         description: "The author's name"
+         required: true
+                
 jobs:
     generate-story:
         runs-on: ubuntu-latest
